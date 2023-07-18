@@ -1,11 +1,11 @@
 package thefarm;
 
 public class TheFarm {
-    public int findAnimalLegs(int chickenLegs, int cowLegs, int pigLegs) {
+    public int findAnimalLegs(int chickenLegs, int dogLegs, int lionLegs) {
         int noOfChickenLegs = chickenLegs * 2;
-        int noOfCowLegs = cowLegs * 4;
-        int noOfPigLegs = pigLegs * 4;
-        int totalAnimalLegs = noOfChickenLegs + noOfCowLegs + noOfPigLegs;
-        return totalAnimalLegs;
+        int noOfDogLegs = dogLegs * 4;
+        int noOfLionLegs = lionLegs * 4;
+        int totalLegs = noOfChickenLegs + noOfDogLegs + noOfLionLegs;
+        return totalLegs;
     }
 }
