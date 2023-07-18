@@ -28,4 +28,10 @@ public class TheBombTest {
         String text = theBomb.checkWord("");
         assertEquals("", text);
     }
+    @Test
+    public void givenThereIsABomb_returnDUCK() {
+        String text = theBomb.checkWord("there is bomb ");
+        assertEquals("DUCK!", text);
+    }
+
 }

@@ -8,6 +8,9 @@ public class TheBomb {
         }
         if (name == ""){
             return  "";
+        }String textInLowerCase = name.toLowerCase();
+        if (textInLowerCase.contains("bomb")) {
+            result = "DUCK!";
         }
         return result;
     }
