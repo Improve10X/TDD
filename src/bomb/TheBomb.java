@@ -6,11 +6,14 @@ public class TheBomb {
         if (name == null) {
             return "null";
         }
-        if (name == ""){
-            return  "";
-        }String textInLowerCase = name.toLowerCase();
+        if (name == "") {
+            return "";
+        }
+        String textInLowerCase = name.toLowerCase();
         if (textInLowerCase.contains("bomb")) {
             result = "DUCK!";
+        } else {
+            result = "Relax, there's no bomb.";
         }
         return result;
     }
