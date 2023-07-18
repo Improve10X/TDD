@@ -42,5 +42,16 @@ public class AgeToDaysTest {
         assertEquals(365, ageZero);
     }
 
+    @Test
+    public void given23Age_return8395Days() {
+        int age = ageToDays.convertAgeToDays(23);
+        assertEquals(8395, age);
+    }
+
+    @Test
+    public void given100Age_return36500Days() {
+        int age = ageToDays.convertAgeToDays(100);
+                assertEquals(36500, age);
+    }
 }
 
