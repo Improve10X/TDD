@@ -21,10 +21,14 @@ public class HelloAndByeTest {
     }
 
     @Test
+    public void givenNull_returnNull() {
+        String test = helloAndBye.checkWord(null,0);
+        assertEquals(null,test);
+    }
+
+    @Test
     public void givenEmpty_returnEmpty() {
         String test = helloAndBye.checkWord("",0);
         assertEquals("",test);
-
     }
-
 }
