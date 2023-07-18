@@ -1,4 +1,4 @@
-package IntergerDivisalbeBy5;
+package intergerdivisalbeby5;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

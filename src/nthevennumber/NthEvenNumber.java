@@ -5,5 +5,5 @@ public class NthEvenNumber {
         int evenNumber = 0;
         evenNumber = 2 * n - 2;
         return evenNumber;
-}
+    }
 }

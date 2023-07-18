@@ -1,4 +1,4 @@
-package IntegerRangeIntegerRange;
+package integerrangeintegerrange;
 
 public class IntegerRangeIntegerRange {
     public boolean findRange(int a, int n, int b) {

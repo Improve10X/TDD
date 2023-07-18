@@ -1,4 +1,4 @@
-package IntergerDivisalbeBy5;
+package intergerdivisalbeby5;
 
 public class IntergerDivisableByFive {
     public boolean find(int a) {

@@ -1,4 +1,4 @@
-package TwoMakesTen;
+package twomakesten;
 
 public class TwoMakesTen {
     public boolean makesTen(int a, int b) {

@@ -1,4 +1,4 @@
-package TwoMakesTen;
+package twomakesten;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

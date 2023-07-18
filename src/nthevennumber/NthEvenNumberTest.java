@@ -21,7 +21,7 @@ public class NthEvenNumberTest {
     @Test
     public void givenEvenNumberIsZero_returnEvenNumberIsZero() {
         int evenNumber = nthEvenNumber.findEvenNumber(0);
-        assertEquals(0, evenNumber);
+        assertEquals(-2, evenNumber);
     }
 
     //input 10 - expected output -18

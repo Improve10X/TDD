@@ -1,4 +1,4 @@
-package LessThan100;
+package lessthan100;
 
 public class LessThan100 {
 

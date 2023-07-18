@@ -1,4 +1,4 @@
-package HoursToSeconds;
+package hourstoseconds;
 
 public class HourToSeconds {
     public int findSeconds(int x, int y) {
