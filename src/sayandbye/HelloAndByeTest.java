@@ -1,7 +1,8 @@
 package sayandbye;
 
-import org.junit.Test;
+
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,8 +21,10 @@ public class HelloAndByeTest {
     }
 
     @Test
-    public void givenZero_returnBye() {
-        String test = helloAndBye.checkNumber("Siva", 0);
-        assertEquals("Bye Siva", test);
+    public void givenEmpty_returnEmpty() {
+        String test = helloAndBye.checkWord("",0);
+        assertEquals("",test);
+
     }
+
 }
