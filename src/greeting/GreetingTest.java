@@ -18,13 +18,19 @@ public class GreetingTest {
     }
 
     @Test
-    public void givenEmptyName_returnEmptyName() {
-        String name = nameGreeting.setNameGreeting("");
-        assertEquals("hello !", name);
+    public void givenNull_returnNull() {
+        String name = nameGreeting.setNameGreeting(null);
+        assertEquals( null, name);
     }
 
     @Test
-    public void givenNameGeraid_returnHelloGeraidExclamationMark() {
+    public void givenEmptyName_returnEmptyName() {
+        String name = nameGreeting.setNameGreeting("");
+        assertEquals("", name);
+    }
+
+    @Test
+    public void givenWordBye_returnhelloByeWithExclamationMark() {
         String name = nameGreeting.setNameGreeting("bye");
         assertEquals("hello bye!", name);
     }
