@@ -31,4 +31,27 @@ public class HelloAndByeTest {
         String test = helloAndBye.checkWord("",0);
         assertEquals("",test);
     }
+
+    public void givenMinus1_returnInvalidText() {
+        String test = helloAndBye.checkWord("Siva", -1);
+        assertEquals("Invalid Text", test);
+    }
+
+    @Test
+    public void givenOne_returnByeHelloSiva() {
+        String test = helloAndBye.checkWord("Siva", 1);
+        assertEquals("Hello Siva", test);
+    }
+
+    @Test
+    public void givenZero_returnByeSiva() {
+        String test = helloAndBye.checkWord("Siva", 0);
+        assertEquals("Bye Siva", test);
+    }
+
+    @Test
+    public void givenSiva_returnInvalidText() {
+        String test = helloAndBye.checkWord("Siva", 7);
+        assertEquals("Invalid Text", test);
+    }
 }
