@@ -23,4 +23,10 @@ public class IntegerDivisableByFiveTest {
         boolean zero = intergerDivisibleByFive.find(0);
         assertEquals(false, zero);
     }
+
+    @Test
+    public void givenMinus1_returnFalse() {
+        boolean zero = intergerDivisibleByFive.find(-1);
+        assertEquals(false, zero);
+    }
 }
