@@ -42,5 +42,17 @@ public class IntegerRangeTest {
         assertEquals(true, range);
     }
 
+    @Test
+    public void givenSixAndOneAndSix_returnFalse() {
+        boolean range = integerRange.findRange(6, 1, 6);
+        assertEquals(false, range);
+    }
+
+    @Test
+    public void givenThreeAndThreeAndEight_returnTrue() {
+        boolean range = integerRange.findRange(3, 3, 8);
+        assertEquals(true, range);
+    }
+
 }
 
