@@ -30,5 +30,11 @@ public class IntegerRangeTest {
         assertEquals(false, oneAndThreeAndNine);
     }
 
+    @Test
+    public void givenOneAndZeroAndZero_returnFalse() {
+        boolean oneAndThreeAndNine = integerRange.findRange(1, 0, 0);
+        assertEquals(false, oneAndThreeAndNine);
+    }
+
 }
 
