@@ -23,5 +23,17 @@ public class MinutesToSecondsTest {
         int zero = minutesToSeconds.findSeconds(0);
         assertEquals(0, zero);
     }
+
+    @Test
+    public void givenNegativeOne_returnNegativeOne() {
+        int minusOne = minutesToSeconds.findSeconds(-1);
+        assertEquals(-60, minusOne);
+    }
+
+    @Test
+    public void givenSeven_returnFourHundredAndTwenty() {
+        int five = minutesToSeconds.findSeconds(7);
+        assertEquals(420, five);
+    }
 }
 
