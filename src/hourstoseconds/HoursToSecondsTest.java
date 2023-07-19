@@ -36,6 +36,18 @@ public class HoursToSecondsTest {
         int time = hourToSeconds.findSeconds(2, 3);
         assertEquals(7380, time);
     }
+
+    @Test
+    public void givenFiveHoursAndFiveMinutes_return18300Seconds() {
+        int time = hourToSeconds.findSeconds(5, 5);
+        assertEquals(18300, time);
+    }
+
+    @Test
+    public void given100HoursAndMinusZeroMinutes_return359400Seconds() {
+        int time = hourToSeconds.findSeconds(100, -10);
+        assertEquals(359400, time);
+    }
 }
 
 
