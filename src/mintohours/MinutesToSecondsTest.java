@@ -32,8 +32,20 @@ public class MinutesToSecondsTest {
 
     @Test
     public void givenSeven_returnFourHundredAndTwenty() {
-        int five = minutesToSeconds.findSeconds(7);
-        assertEquals(420, five);
+        int seven = minutesToSeconds.findSeconds(7);
+        assertEquals(420, seven);
+    }
+
+    @Test
+    public void givenThree_returnOneEighty() {
+        int three = minutesToSeconds.findSeconds(3);
+        assertEquals(180, three);
+    }
+
+    @Test
+    public void givenHundred_returnOneTwenty() {
+        int hundred = minutesToSeconds.findSeconds(100);
+        assertEquals(6000,hundred);
     }
 }
 
