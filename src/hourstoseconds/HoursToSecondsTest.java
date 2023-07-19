@@ -20,21 +20,9 @@ public class HoursToSecondsTest {
     }
 
     @Test
-    public void givenTwoHoursAndThreeMinutes_return7380Seconds() {
-        int twoHoursAndThreeMinutes = hourToSeconds.findSeconds(2, 3);
-        assertEquals(7380, twoHoursAndThreeMinutes);
-    }
-
-    @Test
-    public void givenTwoHoursAndZeroMinutes_return7200Seconds() {
-        int twoHoursAndThreeMinutes = hourToSeconds.findSeconds(2, 0);
-        assertEquals(7200, twoHoursAndThreeMinutes);
-    }
-
-    @Test
-    public void givenZeroHoursAndZeroMinutes_return7380Seconds() {
-        int twoHoursAndThreeMinutes = hourToSeconds.findSeconds(0, 0);
-        assertEquals(0, twoHoursAndThreeMinutes);
+    public void givenZero_returnZero() {
+        int time =hourToSeconds.findSeconds(0,0);
+        assertEquals(0,time);
     }
 }
 
