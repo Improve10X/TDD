@@ -24,6 +24,12 @@ public class HoursToSecondsTest {
         int time =hourToSeconds.findSeconds(0,0);
         assertEquals(0,time);
     }
+
+    @Test
+    public void givenMinus1_returnMinus() {
+        int time =hourToSeconds.findSeconds(-1,-1);
+        assertEquals(-3660,time);
+    }
 }
 
 
