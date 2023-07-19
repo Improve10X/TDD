@@ -30,6 +30,12 @@ public class HoursToSecondsTest {
         int time =hourToSeconds.findSeconds(-1,-1);
         assertEquals(-3660,time);
     }
+
+    @Test
+    public void givenTwoHoursAndThreeMinutes_return7380Seconds() {
+        int time = hourToSeconds.findSeconds(2, 3);
+        assertEquals(7380, time);
+    }
 }
 
 
