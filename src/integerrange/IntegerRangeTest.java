@@ -26,14 +26,20 @@ public class IntegerRangeTest {
 
     @Test
     public void givenOneAndMinusOneAndMinusTen_returnTrue() {
-        boolean oneAndThreeAndNine = integerRange.findRange(1, -1, -10);
-        assertEquals(false, oneAndThreeAndNine);
+        boolean range = integerRange.findRange(1, -1, -10);
+        assertEquals(false, range);
     }
 
     @Test
     public void givenOneAndZeroAndZero_returnFalse() {
-        boolean oneAndThreeAndNine = integerRange.findRange(1, 0, 0);
-        assertEquals(false, oneAndThreeAndNine);
+        boolean range = integerRange.findRange(1, 0, 0);
+        assertEquals(false, range);
+    }
+
+    @Test
+    public void givenFiveAndThreeAndNine_returnTrue() {
+        boolean range = integerRange.findRange(5, 3, 9);
+        assertEquals(true, range);
     }
 
 }
