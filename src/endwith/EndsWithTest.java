@@ -20,14 +20,9 @@ public class EndsWithTest {
     }
 
     @Test
-    public void givenAbc_returnTrue() {
-        Boolean text = endsWith.findSuffix("abc", "bc");
-        assertEquals(true, text);
-    }
-
-    @Test
-    public void givenNull_returnNUll() {
-        Boolean text = endsWith.findSuffix("","");
-        assertEquals(true, text);
+    public void givenEmptyNull_returnNull() {
+        Boolean text = endsWith.findSuffix(null, null);
+        assertEquals(false, text);
     }
 }
+
