@@ -31,13 +31,13 @@ public class LessThan100Test {
     }
 
     @Test
-    public void checkNumber() {
+    public void givenHundredAndThreeHundred_returnTrue() {
         Boolean number = lessThan100.checkNumbers(100, 300);
-        assertEquals(false, number);
+        assertEquals(true, number);
     }
 
     @Test
-    public void setLessThan100() {
+    public void givenNintyNineAndOne_returnTrue() {
         Boolean number = lessThan100.checkNumbers(99, 1);
         assertEquals(false, number);
     }
