@@ -45,4 +45,10 @@ public class NthEvenNumberTest {
         assertEquals(118, evenNumber);
     }
 
+    @Test
+    public void givenEvenNumberIsHundred_returnEvenNumberIs() {
+        int evenNumber = nthEvenNumber.findEvenNumber(100);
+        assertEquals(198, evenNumber);
+    }
+
 }
