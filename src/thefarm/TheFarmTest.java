@@ -65,3 +65,12 @@ public class TheFarmTest {
         assertEquals(1000, animalLegs);
     }
 }
+/*-1 , -1 , -1
+-10 ,  -20  , -10
+0 , 0 , 0
+1 ,1 ,1
+10 , 10, 10
+20 , 2 , 12
+68 , 38, 8
+100 , 100 , 100
+*/
