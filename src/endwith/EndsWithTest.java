@@ -32,14 +32,26 @@ public class EndsWithTest {
     }
 
     @Test
-    public void givenA_returnA() {
+    public void givenA_returnTrue() {
         Boolean text = endsWith.findSuffix("a", "a");
         assertEquals(true, text);
     }
 
     @Test
-    public void givenAB_returnAB() {
+    public void givenAB_returnTrue() {
         Boolean text = endsWith.findSuffix("ab", "b");
+        assertEquals(true, text);
+    }
+
+    @Test
+    public void givenABCAndD_returnFalse() {
+        Boolean text = endsWith.findSuffix("abc", "d");
+        assertEquals(false, text);
+    }
+
+    @Test
+    public void givenDADAndD_returnTrue() {
+        Boolean text = endsWith.findSuffix("Dad", "d");
         assertEquals(true, text);
     }
 }
