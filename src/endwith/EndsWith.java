@@ -5,7 +5,10 @@ public class EndsWith {
         boolean result = false;
         if (originalText == null || suffix == null){
             return false;
-        }        return result;
+        }else if (originalText.endsWith(suffix)){
+            return true;
+        }
+        return result;
     }
 }
 

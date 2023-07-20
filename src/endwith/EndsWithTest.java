@@ -24,5 +24,23 @@ public class EndsWithTest {
         Boolean text = endsWith.findSuffix(null, null);
         assertEquals(false, text);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        Boolean text = endsWith.findSuffix("", "");
+        assertEquals(true, text);
+    }
+
+    @Test
+    public void givenA_returnA() {
+        Boolean text = endsWith.findSuffix("a", "a");
+        assertEquals(true, text);
+    }
+
+    @Test
+    public void givenAB_returnAB() {
+        Boolean text = endsWith.findSuffix("ab", "b");
+        assertEquals(true, text);
+    }
 }
 
