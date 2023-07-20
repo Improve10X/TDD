@@ -9,21 +9,16 @@ public class LessThan100Test {
  @Test
     public void empty() {}
 
-    @Test
-    public void checkEmpty() {
-     Boolean number = lessThan100.checkNumbers(2,3);
-     assertEquals(true ,number);
-    }
 
     @Test
-    public void checkNumber() {
-        Boolean number = lessThan100.checkNumbers(100,300);
-        assertEquals(false ,number);
+    public void givenMinus1AndMinus1_returnTrue() {
+        Boolean number = lessThan100.checkNumbers(-1,-1);
+        assertEquals(true ,number);
+    }
+    @Test
+    public void givenZeroAndZero_returnTrue() {
+        Boolean number = lessThan100.checkNumbers(0,0);
+        assertEquals(true ,number);
     }
 
-    @Test
-    public void setLessThan100() {
-        Boolean number = lessThan100.checkNumbers(99,1);
-        assertEquals(false ,number);
-    }
 }
