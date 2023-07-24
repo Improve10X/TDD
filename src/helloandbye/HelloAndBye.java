@@ -1,4 +1,4 @@
-package sayandbye;
+package helloandbye;
 
 public class HelloAndBye {
     public String checkWord(String name, int num) {

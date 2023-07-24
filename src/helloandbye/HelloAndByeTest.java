@@ -1,4 +1,4 @@
-package sayandbye;
+package helloandbye;
 
 
 import org.junit.jupiter.api.BeforeEach;
