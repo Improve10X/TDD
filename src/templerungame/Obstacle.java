@@ -6,7 +6,7 @@ public class Obstacle {
     protected int damage;
 
     public Obstacle(String name, int damage) throws InvalidObstacleDamageException {
-        this.name = name;
+        this.name = name == null ? "" : name ;
         if (damage < 0 || damage > 100) {
             throw new InvalidObstacleDamageException();
         }
