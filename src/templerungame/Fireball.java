@@ -1,8 +1,9 @@
 package templerungame;
 
-public class Fireball {
+public class Fireball extends Obstacle {
     public int speed;
-    public Fireball(int speed) {
+    public Fireball(int speed) throws InvalidObstacleDamageException {
+        super("Fireball",20);
         if(speed < 0 || speed > 100){
             throw new InvalidFireBallSpeedException();
         }

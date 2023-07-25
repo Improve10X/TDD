@@ -1,10 +1,11 @@
 package templerungame;
 
-public class Coin {
+public class Coin extends Obstacle {
 
     public int value;
 
-    public Coin(int value) {
+    public Coin(int value) throws InvalidObstacleDamageException {
+        super("Coin",0);
         if (value < 0 || value > 100) {
             throw new InvalidCoinValueException();
         } else {
