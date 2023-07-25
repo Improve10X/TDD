@@ -55,9 +55,9 @@ public class ObstacleTest {
     @Test
     public void whenCollideCalled_thenDecreaseHealth() throws Obstacle.InvalidObstacleDamageException,
             Player.InvalidHealthException {
-        Obstacle obstacle = new Obstacle("Fireball", 10);
+        Obstacle obstacle = new Obstacle("Fireball", 20);
         Player player = new Player("Name");
         obstacle.collide(player);
-        assertEquals(90, player.getHealth());
+        assertEquals(80, player.getHealth());
     }
 }

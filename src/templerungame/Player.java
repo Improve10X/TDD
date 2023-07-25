@@ -47,6 +47,7 @@ public class Player {
     }
 
     public void reduceHealth(int damage) {
+        health -=damage;
     }
 
     public class InvalidHealthException extends RuntimeException {

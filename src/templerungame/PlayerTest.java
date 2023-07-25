@@ -94,7 +94,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void givenCoin10_whenGetScoreCalled_returns10() throws Player.InvalidHealthException {
+    public void givenCoin10_whenGetScoreCalled_returns10() throws Player.InvalidHealthException, Obstacle.InvalidObstacleDamageException {
         Player player = new Player("Name");
         player.collectCoin(new Coin(10));
         assertEquals(10, player.getScore());
@@ -102,7 +102,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void givenCoins10and20_whenGetScoreCalled_returns30() throws Player.InvalidHealthException {
+    public void givenCoins10and20_whenGetScoreCalled_returns30() throws Player.InvalidHealthException, Obstacle.InvalidObstacleDamageException {
         Player player = new Player("Name");
         player.collectCoin(new Coin(10));
         player.run();
